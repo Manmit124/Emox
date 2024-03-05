@@ -3,7 +3,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <div className="relative flex items-center">
-    <svg
+    {/* <svg
       version="1.1"
       id="a"
       xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +44,9 @@ const Logo = () => {
           </g>
         </g>
       </g>
-    </svg>
-    <h5 className="absolute right-[-45px] xl:right-[-35px] pt-1 font-medium text-2xl">
-      Becodemy
+    </svg> */}
+    <h5 className="absolute right-[-45px] xl:right-[-35px] pt-1 ml-4 font-medium text-2xl">
+      Emox
     </h5>
   </div>
   )

@@ -2,8 +2,8 @@ import React from "react";
 
 const FooterLogo = () => {
   return (
-    <div className="w-min relative flex items-center">
-      <svg
+    <div className="w-min  flex items-center">
+      {/* <svg
         version="1.1"
         id="a"
         xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +44,9 @@ const FooterLogo = () => {
             </g>
           </g>
         </g>
-      </svg>
-      <h5 className="absolute right-[0px] pt-1 font-medium text-2xl">
-        Becodemy
+      </svg> */}
+      <h5 className="  pt-1 font-medium text-2xl">
+        Emox
       </h5>
     </div>
   );

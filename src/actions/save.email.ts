@@ -1,4 +1,4 @@
-"use server";
+ "use server";
 
 import Email from "@/models/email.model";
 import { connectDb } from "@/shared/libs/db";
