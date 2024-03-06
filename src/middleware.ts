@@ -23,8 +23,8 @@ import { NextRequest, NextResponse, NextFetchEvent } from "next/server";
 // }
 
 export default authMiddleware({
-  publicRoutes:["/","/dashboard"],
-  ignoredRoutes: ["/((?!api|trpc))(_next.*|.+\.[\w]+$)", "/"]
+  publicRoutes:["/sign-in","/sign-up","/dashboard","/api/webhook"],
+  // ignoredRoutes: ["/((?!api|trpc))(_next.*|.+\.[\w]+$)", "/"]
 });
 
 export const config = {

@@ -23,6 +23,7 @@ export default function Providers({ children }: ProviderProps) {
     return null;
   } else {
     if (user) {
+      console.log(user)
       isStripeCustomerIdHas();
     }
   }

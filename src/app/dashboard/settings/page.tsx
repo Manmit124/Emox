@@ -52,6 +52,7 @@ const Page = () => {
       toast.success("API Key updated!");
     });
   };
+  // console.log(data?.plan)
 
   return (
     <div className="w-[85%] p-5">
@@ -63,6 +64,7 @@ const Page = () => {
       )}
       {activeItem === "API Access" && (
         <div>
+          
           {data?.plan === "LAUNCH" ? (
             <div className="w-full h-[90vh] flex items-center justify-center">
               <h3>
@@ -71,9 +73,9 @@ const Page = () => {
             </div>
           ) : (
             <div className="p-4 w-full overflow-hidden">
-              <h3>API KEY:</h3>
-              <p className="whitespace-pre-line overflow-hidden break-words copy-text">
-                {apiKey}
+              <h3 className="">API KEY:</h3>
+              <p className="whitespace-pre-line px-2 shadow  bg-black  text-white  rounded-xl overflow-hidden break-words copy-text truncate">
+              {apiKey.length > 250 ? `${apiKey.substring(0, 250)}...` : apiKey}
               </p>
               <div className="flex items-center">
                 <div

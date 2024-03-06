@@ -12,6 +12,7 @@ export const addStripe = async () => {
     const user = await currentUser();
 
     const membership = await Membership.findOne({ userId: user?.id! });
+console.log(membership)
 
     if (membership) {
       return;

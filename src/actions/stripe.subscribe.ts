@@ -15,6 +15,7 @@ export const stripeSubscribe = async ({
   userId: string;
 }) => {
   try {
+    console.log(userId)
     const user = await Membership.findOne({ userId });
     const checkoutSession = await stripe.checkout.sessions.create({
       mode: "subscription",

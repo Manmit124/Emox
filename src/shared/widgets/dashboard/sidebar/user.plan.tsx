@@ -9,6 +9,8 @@ const UserPlan = () => {
   const { data, loading } = useSubscribersData();
   const { data: membershipData, loading: membershipLoading } =
     useGetMembership();
+    console.log(data)
+    
   const history = useRouter();
 
   const handleManage = async () => {
