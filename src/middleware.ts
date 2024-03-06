@@ -22,10 +22,14 @@ import { NextRequest, NextResponse, NextFetchEvent } from "next/server";
 //   return response;
 // }
 
+// export default authMiddleware({
+//   publicRoutes:["/sign-in","/sign-up","/dashboard","/api/webhook"],
+//   // ignoredRoutes: ["/((?!api|trpc))(_next.*|.+\.[\w]+$)", "/"]
+// });
 export default authMiddleware({
-  publicRoutes:["/sign-in","/sign-up","/dashboard","/api/webhook"],
-  // ignoredRoutes: ["/((?!api|trpc))(_next.*|.+\.[\w]+$)", "/"]
+  publicRoutes: ["/sign-in", "/sign-up", "/api/webhook", "/api/subscribe"],
 });
+
 
 export const config = {
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
